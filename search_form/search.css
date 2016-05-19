@@ -1,0 +1,86 @@
+h3 {
+	text-align: center;
+	color: #7ECDD2;
+	font-size: 7vw;
+}
+input {
+	width: 70%;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	top: 30%;
+	left: 14%;
+	font-size: 40px;
+	border: 1px solid #7ECDD2;
+}
+
+select {
+	width: 100px;
+	position: absolute;
+	top: 40%;
+	left: 14%;
+	border: 1px solid #7ECDD2;
+}
+
+button {
+	position: absolute;
+	top: 45%;
+	left: 42%;
+	line-height: 50px;
+	display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  background-color: #7ECDD2;
+  color: white;
+  width: 16%;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+  opacity: 1;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+
+#navigation_bar ul {
+	font-family: lucida sans unicode, lucida grande, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	list-style: none;
+	text-align: left;
+	background-color: #f2f2f2;
+	font-size: 18px;
+	margin-top: 0;
+	height: 60px;
+	line-height: 60px;
+	box-shadow: 1px 1px 5px #808080;
+
+}
+
+#navigation_bar ul img {
+	max-width: 45px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 8px;
+}
+#navigation_bar ul	li {
+	display: inline-block;
+	margin-right: 5%;
+	color: #808080;
+
+}
+
+#navigation_bar ul a {
+	text-decoration: none;
+	opacity: 1;
+}
+
+#navigation_bar ul a:hover {
+	opacity: 0.7;
+}

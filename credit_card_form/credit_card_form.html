@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit Card Form</title>
+	<link rel="stylesheet" type="text/css" href="credit_card_form.css">
+</head>
+<body>
+<section id="navigation_bar">
+<ul>
+<a href="../../index.html">	<li>Home</li>
+	</a><a href="../forms.html">	<li>Forms</li>
+	</a><a href="../../buttons/button.html">	<li>Buttons</li>
+	</a><a href="../../profile_card/profile_card.html">	<li>Profile Card</li>
+	</a><a href="../../e_commerce_site/product_listing/product_listing.html">	<li>Listing and Cart</li>
+	</a><a href="../../calculator/calculator.html">	<li>Calculator</li>
+	</a>
+	<img src="../../image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg">
+	</ul> </section>
+
+<form>
+<div id="top">
+<h2>Pay Invoice</h2>
+</div>
+<img src="logo_visa_mastercard.png">
+<label for="name">Name on card</label>
+<input type="text" id="name"></input>
+
+	<label for="number">Card Number</label>
+	<input type="text" max="19"></input>
+
+	<label for="csv">Security Code</label>
+		<label id="csv_explained" for="csv">What is this?</label> 
+		<!--mousehover text will be added when javascript is learned-->
+		<input type="text" max="3"></input>
+	<label for="date">Expiration Date</label>
+	<input type="date" placeholder="MM / YY"></input>
+<button type="submit">Pay</button>
+</form>
+</body>
+</html>

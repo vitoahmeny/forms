@@ -1,0 +1,79 @@
+body {
+	width: 80%;
+	margin: auto;
+	margin-top: 10%;
+
+}
+h1 {
+	margin-left: 10px;
+	color: #D4AF37;
+
+}
+form {	
+	font-size: 20px;
+}
+
+.billing, .shipping {
+	width: 45%;
+	float: left;
+}
+
+.billing {
+	margin-left: 5%;
+}
+
+.shipping input, .billing input {
+	width: 95%;
+	line-height: 30px;
+	border: none;
+	border-bottom: 1px solid #a9a9a9;
+	font-size: 20px;
+	margin: 0 30px 10px 10px;
+}
+
+label {
+	margin-left: 10px;
+}
+
+h3 {
+	margin-left: 10px;
+}
+#navigation_bar ul {
+	font-family: lucida sans unicode, lucida grande, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	list-style: none;
+	text-align: left;
+	background-color: #f2f2f2;
+	font-size: 18px;
+	margin-top: 0;
+	height: 60px;
+	line-height: 60px;
+	box-shadow: 1px 1px 5px #808080;
+
+}
+
+#navigation_bar ul img {
+	max-width: 45px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 3%;
+	margin-top: 8px;
+}
+#navigation_bar ul	li {
+	display: inline-block;
+	margin-right: 5%;
+	color: #808080;
+
+}
+
+#navigation_bar ul a {
+	text-decoration: none;
+	opacity: 1;
+}
+
+#navigation_bar ul a:hover {
+	opacity: 0.7;
+}
