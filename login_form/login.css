@@ -11,13 +11,20 @@ form {
 .text_input, .password_input {
 	font-size: 20px;
 	width: 90%;
-	line-height: 50px;
 	border: white;
 	border-bottom: 1px solid #808080;
 	margin-left: 15px;
+  	outline:none;
+  	padding-top: 20px;
+  	padding-bottom:5px;
 }
 .password_input {
 	margin-top: 10px;
+}
+
+.error {
+	margin-left: 15px;
+	margin-top: 5px;
 }
 
 .checkbox_input {

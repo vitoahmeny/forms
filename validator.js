@@ -1,5 +1,6 @@
-	function() {
-		var validator = {};
+(function (window) {
+	// body...
+	var validator = {};
 
 	validator.isEmailAddress = function (input) {
 		if (!input) throw "Missing parameter in isEmailAddress function: 'input'.";
@@ -267,6 +268,10 @@
 		return validator.isRGB(input) || validator.isHex(input) || validator.isHSL(input);
 	};
 
+	validator.isPassword = function (input) {
+		return validator.isEmpty(input) && input.length >= 6;
+	}
+
 	validator.isTrimmed = function (input) {
 		var result = true;
 		if ((input.charAt(0) === " ") || (input.charAt(input.length - 1) === " "))
@@ -279,4 +284,7 @@
 			}
 			return result;
 	};
-}();
+	window.validator = validator;
+})(window);
+
+	

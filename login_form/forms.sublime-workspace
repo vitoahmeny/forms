@@ -4,6 +4,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"key",
 				"keyArr"
 			],
@@ -12,6 +13,8 @@
 				"for	for (…) {…}"
 			],
 			[
+=======
+>>>>>>> gh-pages
 				"get",
 				"getElementById"
 			],
@@ -144,7 +147,11 @@
 				"Package Control: Add Channel"
 			]
 		],
+<<<<<<< HEAD
 		"width": 485.0
+=======
+		"width": 467.0
+>>>>>>> gh-pages
 	},
 	"console":
 	{
@@ -181,6 +188,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/Users/Vito/Workspace/forms",
 		"/Users/Vito/Workspace/forms/login_form"
 	],
@@ -191,6 +199,16 @@
 		"/Users/Vito/Workspace/forms/validator.js",
 		"/Users/Vito/Workspace/forms/login_form/login.css",
 		"/Users/Vito/Workspace/forms/login_form/login.html",
+=======
+		"/Users/Vito/Workspace/forms"
+	],
+	"file_history":
+	[
+		"/Users/Vito/Workspace/forms/login_form/login.html",
+		"/Users/Vito/Workspace/forms/login_form/login.css",
+		"/Users/Vito/Workspace/forms/login_form/login.js",
+		"/Users/Vito/Workspace/forms/validator.js",
+>>>>>>> gh-pages
 		"/Users/Vito/Documents/OneDrive/android-recovery/style/css.css",
 		"/Users/Vito/Documents/OneDrive/android-recovery/tutorials/recover-deleted-photos-from-samsung-galaxy-s7.html",
 		"/Users/Vito/Workspace/web-components/components/product_listing/product_listing.html",
@@ -311,9 +329,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"for",
 			"i",
 			"document",
+=======
+>>>>>>> gh-pages
 			"segoe ui",
 			"h2",
 			"float",
@@ -466,10 +487,13 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"login",
 				"login_form/login.js"
 			],
 			[
+=======
+>>>>>>> gh-pages
 				"vali",
 				"validator.js"
 			],
