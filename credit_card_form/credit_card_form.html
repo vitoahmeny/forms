@@ -3,6 +3,8 @@
 <head>
 	<title>Credit Card Form</title>
 	<link rel="stylesheet" type="text/css" href="credit_card_form.css">
+	<script type="text/javascript" src="credit_card_form.js"></script>
+	<script type="text/javascript" src="../validator.js"></script>
 </head>
 <body>
 <section id="navigation_bar">
@@ -14,7 +16,6 @@
 	</a><a href="http://vitoahmeny.github.io/e-commerce-site/">	<li>Listing and Cart</li>
 	</a><a href="http://vitoahmeny.github.io/calculator/">	<li>Calculator</li>
 	</a>
-	<img src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
 	</ul>
 	</section>
 
@@ -24,18 +25,19 @@
 </div>
 <img src="logo_visa_mastercard.png">
 <label for="name">Name on card</label>
-<input type="text" id="name"></input>
+<input type="text" id="name" name="name"></input>
+	<span id="notEnoughNumbers"></span>
 
-	<label for="number">Card Number</label>
-	<input type="text" max="19"></input>
-
-	<label for="csv">Security Code</label>
-		<label id="csv_explained" for="csv">What is this?</label> 
-		<!--mousehover text will be added when javascript is learned-->
-		<input type="text" max="3"></input>
+	<label for="cardNumber">Card Number</label>
+	<input type="text" id="cardNumber" name="Credit card number"></input>
+	<label for="cvv">Security Code</label>
+		<label id="cvv_explained" for="csv">What is this?</label> 
+		<img id="cvvImg" src="http://www.quoteslike.com/images/842/security-code-on-credit-card-iUMkHw-quote.gif">
+		<input type="text" id="securityCode" name="security code"></input>
 	<label for="date">Expiration Date</label>
-	<input type="date" placeholder="MM / YY"></input>
-<button type="submit">Pay</button>
+	<input type="date" id="date" placeholder="MM / YY" name="expiration date"></input>
+	<span id="error"></span>
+<button type="submit" id="submit">Pay</button>
 </form>
 </body>
 </html>

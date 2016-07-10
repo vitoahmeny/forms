@@ -3,6 +3,8 @@
 <head>
 	<title>Shipping and Billing Address</title>
 	<link rel="stylesheet" type="text/css" href="shipping_and_billing_form.css">
+	<script type="text/javascript" src="../validator.js"></script>
+	<script type="text/javascript" src="shipping_and_billing_form.js"></script>
 </head>
 <body>
 <section id="navigation_bar">
@@ -19,31 +21,40 @@
 <H1>SHIPPING INFORMATION</H1>
 <form>
 	<div class="shipping">
-		<h3>Shipping Address</h3>
-		<label for="first_name">First Name</label>
-		<input type="text" id="first_name"></input>
-		<label for="last_name">Last Name </label>
-		<input type="text" id="last_name"></input>
-		<label for="address">Adress </label>
-		<input type="text" id="address"></input>
+	<div class="shortInput">
+
+		<div>
+			<label for="first_name">First Name</label>
+			<input type="text" name="first name" id="first_name"></input>
+		</div>
+		<div>		
+			<label for="last_name">Last Name </label>
+			<input type="text" name="last name" id="last_name"></input>
+		</div>		
+		</div>
+		<label for="addressLine1">Adress Line 1</label>
+		<input type="text" name="address line 1" id="addressLine1"></input>
+		<label for="addressLine2">Adress Line 2</label>
+		<input type="text" id="addressLine2" placeholder="Optional"></input>
+		
 		<label for="city">City</label>
-		<input type="text" id="city"></input>
+		<input type="text" id="city" name="city name"></input>
+
+		<div class="shortInput"><div>
+				<label for="state">State</label>
+				<input type="text" id='state' name="state name">
+				</div>
+				<div>
+				<label for="zipcode">Zip Code</label>
+				<input type="text" id="zipcode" name="Zip code">		
+				</div>		</div>
 		<label for="country">Country</label>
-		<input type="text" id="country"></input>
+		<input type="text" id="country" name="country name"></input>
 	</div>
-	<div class="billing">
-		<h3>Billing Address</h3>
-		<label for="first_name_billing">First Name</label>
-		<input type="text" id="first_name_billing"></input>
-		<label for="last_name_billing">Last Name</label>
-		<input type="text" id="last_name_billing"></input>
-		<label for="address_billing">Adress </label>
-		<input type="text" id="address_billing"></input>
-		<label for="city_billing">City</label>
-		<input type="text" id="city_billing"></input>
-		<label for="country_billing">Country</label>
-		<input type="text" id="country_billing"></input>
-	</div>
+	<input type="checkbox" id="checkbox" name="confirm"><label>Billing address same as shipping address?</label>
+	<span id="error"></span>
+	<div id = "buttonLine"><button type="submit" id="back">Go Back</button>
+		<button type="submit" id="saveContinue">Save & Continue</button></div>
 </form>
 </body>
 </html>

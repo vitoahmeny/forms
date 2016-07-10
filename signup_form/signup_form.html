@@ -3,8 +3,8 @@
 <head>
 	<title>Signup Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src=../validator.js></script>
 	<script type="text/javascript" src="signup_form.js"></script>
-
 
 </head>
 <body>
@@ -21,10 +21,18 @@
 	</ul> </section>
 	<form class="signup_form">
 	<h3>Sign me Up</h3>
-	<input type="text" placeholder="What's your full name?"></input>
-	<input type="date" placeholder="When's your birthday?"></input>
-	<input type="email" placeholder="Email"></input>
-	<input type="text" placeholder="Use a secure password"></input>
+	<input type="text" name="First name" id="firstName" placeholder="First Name"></input>
+	<span  id="invalidFirstName" class="invalid"></span>
+	<input type="text" name="Last name" id="lastName" placeholder="Last Name">
+	<span id="invalidLastName" class="invalid"></span>
+	<input type="date" name="Date of Birth" id="birthDate" placeholder="Date of Birth"></input>
+	<span id="invalidDate" class="invalid"></span>
+	<input type="email" name="Email" id="email" placeholder="Email">
+	<span id="invalidEmail" class="invalid"></span></input>
+	<input type="password" name="Password" id="password" placeholder="Use a secure password">
+	<span id='invalidPassword' class="invalid"></span></input>
+	<span id="error" class="invalid"></span>
+
 	<button type="submit">Submit</button>
 	</form>
 </body>

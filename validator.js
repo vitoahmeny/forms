@@ -33,10 +33,23 @@
 
 	validator.isDate = function (input) {
 		var date = new Date(input);
-  		return date.toString() !== "Invalid Date";
-	};
+  		return date.toString() !== "Invalid Date"; };
 
 
+  	validator.isHour = function (input) {
+  		var re = /\d{1,2}:00/;
+  		return input >= 0 && input < 24 || re.test(input);
+  		
+
+  	}
+
+  	validator.completeHour = function (input) {
+  		var re = /\d{1,2}:00/;
+  		if (!re.test(input)) {
+  		  		input = input + ":00";
+  		  	}
+  		return input;
+  	}
 	validator.convertToDateObject = function (input) {
 		if (input instanceof Date) return input;
 		else if (validator.isDate(input)) {
@@ -270,7 +283,7 @@
 
 	validator.isPassword = function (input) {
 		return validator.isEmpty(input) && input.length >= 6;
-	}
+	};
 
 	validator.isTrimmed = function (input) {
 		var result = true;

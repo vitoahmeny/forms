@@ -3,6 +3,8 @@
 <head>
 	<title>Scheduling</title>
 	<link rel="stylesheet" type="text/css" href="scheduling.css">
+	<script type="text/javascript" src="../validator.js"></script>
+	<script type="text/javascript" src="scheduling.js"></script>
 </head>
 <body>
 <section id="navigation_bar">
@@ -17,15 +19,20 @@
 	<img src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
 	</ul> </section>
 <form>
-<div><h3>Scheduling</h3>
-<label for="theDate">Date</label>
-<input type="date" id="theDate"></input>
-</div><div><label for="theTime">Time</label>
-<input type="time" id="theTime"></input>
+<h3>Scheduling</h3>
+<span id="errorMessage"></span>
+<div>
+<label for="date">Date</label>
+<input type="date" id="date" placeholder="YYYY/MM/DD"></input>
+<span id="dateCheck"></span>
 </div>
-<div><label for="contact">Contact</label>
-<input type="text" id="contact"></input>
-</div><div><label for="email">Email</label>
+<div><label for="hour">Hour</label>
+<input type="time" id="hour"></input>
+</div>
+<div><label for="phone">Phone</label>
+<input type="text" id="phone"></input>
+</div>
+<div><label for="email">Email</label>
 <input type="email" id="email"></input>
 </div>
 <div><label for="timeZone">Choose a Timezone</label>
@@ -114,7 +121,6 @@
 	<option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
 </select>
 </div>
-
 <textarea placeholder="Leave a Message Here"></textarea>
 <button class="button" type="submit">Submit</button>
 </form>

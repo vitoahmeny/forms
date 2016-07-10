@@ -3,6 +3,8 @@
 <head>
 	<title>A Color Building Form</title>
 	<link rel="stylesheet" type="text/css" href="color_building_form.css">
+	<script type="text/javascript" src="color_building_form.js"></script>
+	<script type="text/javascript" src="../validator.js"></script>
 </head>
 <body>
 <section id="navigation_bar">
@@ -35,8 +37,9 @@
 			<label for="blue">B </label>
 				<input type="range" min="0" max="255" step="5" id="blue"></input>
 		<label for="alpha">Alpha </label>
-		<input type="range" min="0" max="1" step="0.01" id="alpha"></input>
+		<input type="range" min="0" max="1" step="0.01" id="alpha" value="1"></input>
 		<textarea></textarea>
+		<p id="colorCode"></p>
 			</form>
 </body>
 </html>

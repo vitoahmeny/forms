@@ -22,9 +22,10 @@ form {
 	margin-top: 10px;
 }
 
-.error {
+#error {
 	margin-left: 15px;
-	margin-top: 5px;
+	color: #ee6060;
+	font-size: 14px;
 }
 
 .checkbox_input {

@@ -24,22 +24,6 @@ label, input {
 	width: 78%;
 }
 
-input {
-	height: 25px;
-}
-
-label[for="csv"] {
-	width: 40%;
-	display: inline-block;
-}
-
-#csv_explained {
-	float: right;
-	color: #7ECDD2;
-	font-size: 0.7em;
-	width: 30%;
-	margin-top: 2px;
-}
 img	{
 	width: 50%;
 	margin-left: 25%;
@@ -47,8 +31,54 @@ img	{
 	margin-bottom: 10%;
 }
 
-button {
+#notEnoughNumbers {
+	display: inline;
+	float: right;
+	font-size: 0.7em;
+	color: #7ECDD2;
+	margin-right: 35px;
+	margin-top: 3px;
+}
+
+input {
+	height: 25px;
 	font-size: 1em;
+}
+
+.valid {
+	
+}
+
+.invalidInput {
+	background-color: #ee6060;
+	opacity: 0.5;
+	outline: none;
+}
+
+label[for="cvv"] {
+	width: 40%;
+	display: inline-block;
+}
+
+#cvvImg {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	width: 450px;
+	display: none;
+}
+
+#cvv_explained {
+	float: right;
+	color: #7ECDD2;
+	font-size: 0.7em;
+	width: 30%;
+	margin-top: 2px;
+}
+
+
+button {
+font-size: 1em;
   background-color: #7ECDD2;
   color: white;
   text-align: center;
@@ -58,14 +88,25 @@ button {
   height: 35px;
   line-height: 30px;
   opacity: 1;
-  margin-left: 11%;
   margin-bottom: 30px;
   margin-top: 15px;
   border-radius: 2px;
+  margin-left: 11%;
 }
 
 .button:hover {
 	opacity: 0.75;
+}
+
+#error {
+	font-size: 12px;
+	padding: 0;
+	color: #7ECDD2;
+	margin-left: 12%;
+}
+
+#error:empty {
+	display: none;
 }
 
 

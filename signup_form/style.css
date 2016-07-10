@@ -11,15 +11,25 @@
 
 input {
 	font-size: 20px;
-	width: 88%;
-	border: white;
+	width: 82%;
+	border: none;
 	border-bottom: 1px solid #808080;
+	margin-left: 9%;
 	margin-top: 1em;
-	margin-left: 20px;
 	outline-style: none;
 	padding-top: 20px;
 	padding-bottom: 5px;
+}
 
+.invalid {
+	font-size: 14px;
+	color: #ee6060;
+	display: block;
+	margin-left: 9%;
+}
+
+#error {
+	margin-top: 20px;
 }
 
 .signup_form h3 {

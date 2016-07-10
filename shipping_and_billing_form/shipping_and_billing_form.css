@@ -1,43 +1,76 @@
 body {
-	width: 80%;
+	width: 450px;
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 7%;
+	font-family: lucida sans unicode, lucida grande, sans-serif;
+	border: 1px solid #7ECDD2;
+	padding: 1% 2% 2% 3%;
+
 
 }
+
 h1 {
-	margin-left: 10px;
-	color: #D4AF37;
+	color: #7ECDD2;
+	text-align: center;
+	margin-right: 20px;
 
-}
-form {	
-	font-size: 20px;
-}
-
-.billing, .shipping {
-	width: 45%;
-	float: left;
-}
-
-.billing {
-	margin-left: 5%;
-}
-
-.shipping input, .billing input {
-	width: 95%;
-	line-height: 30px;
-	border: none;
-	border-bottom: 1px solid #a9a9a9;
-	font-size: 20px;
-	margin: 0 30px 10px 10px;
 }
 
 label {
-	margin-left: 10px;
 }
 
-h3 {
-	margin-left: 10px;
+.shipping input {
+	width: 95%;
+	outline: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 26px;
+	font-size: 1em;
+	padding-left: 5px;
 }
+
+#checkbox {
+	margin-top: 10px;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+
+#error {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.8em;
+	color: #ee6060;
+}
+
+.shortInput div {
+	display: inline-block;
+	width: 48%;
+	margin-right: 2px;
+}
+
+#buttonLine {
+	display: block;
+}
+
+button {
+	display: inline-block;
+	font-size: 1em;
+  	background-color: #7ECDD2;
+	color: white;
+	text-align: center;
+	border: none;
+	opacity: 1;
+	line-height: 35px;
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 40%;
+	margin-left: 5%;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
 #navigation_bar ul {
 	font-family: lucida sans unicode, lucida grande, sans-serif;
 	position: absolute;
